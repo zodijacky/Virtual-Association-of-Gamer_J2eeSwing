@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="vagEJB">
+	<jta-data-source>java:jboss/datasources/vagDS</jta-data-source>
+	<class>entities.ActiveMember</class>
+	<class>entities.Administrator</class>
+	<class>entities.Advertisement</class>
+	<class>entities.AdvertisementPK</class>
+	<class>entities.Article</class>
+	<class>entities.Comment</class>
+	<class>entities.CommentPK</class>
+	<class>entities.Event</class>
+	<class>entities.Gamer</class>
+	<class>entities.Participation</class>
+	<class>entities.ParticipationPK</class>
+	<class>entities.Reclamation</class>
+	<class>entities.Sponsor</class>
+	<class>entities.Tournament</class>
+	<class>entities.Training</class>
+	<class>entities.User</class>
+	<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
+		</properties>
+	</persistence-unit>
+	
+</persistence>
